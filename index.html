@@ -1,6 +1,19 @@
 <html>
 <body>
 <h1>FUN WITH HTML</h1>
-<p>In chapter five of "Interactive Data Visualization for the Web," Murray describes how to use d3 to 
+<p>In chapter five of "Interactive Data Visualization for the Web," Murray describes how to use d3 in your code. The following are some
+    of the commands that he teaches.</p><br>
+<ul>
+  <li>Select- this d3 command allows the user to select the element in the DOM that he/she wants to use. For example, in order to select 
+       the body a user would use the following code: d3.select("body")</li>
+  <li>Append- the d3 command allows the user to add an element into the perivously selected element. For example, if a user wanted to add a
+       header into the body, the user would use the following code: d3.select.selectAll("h1").data(dataSet).enter().append("h1")</li>
+  <li>Text- this d3 command allows the user to insert the desired text into the slected element. For example, if the user wanted their new 
+        header to say "Congratulations!" then they would use the following code: d3.select.selectAll("h1").data(dataSet).enter().append("h1").
+        text("Congratulations!")</li>
+  <li>Style- this d3 commad allows the user to give the secected element a CSS property. For example, if a user wanted a new header to be blue,
+        then the user would use the following code: d3.select.selectAll("h1").data(dataSet).enter().append("h1").text("Congratulations!")
+        .style("color", "blue")</li>
+</ul>
 </body>
 </html>
